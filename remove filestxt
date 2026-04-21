@@ -1,0 +1,12 @@
+Remove-Item "IIS:\SslBindings\0.0.0.0!443!www.bdo.ph.com"
+
+
+Remove-WebBinding -Name "bdo.ph.com" -Protocol https -Port 443 -HostHeader "www.bdo.ph.com"
+
+
+Remove-Item "IIS:\SslBindings\!443!www.bdo.ph.com" -Force
+
+
+iis reset
+
+
