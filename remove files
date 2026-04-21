@@ -10,3 +10,9 @@ Remove-Item "IIS:\SslBindings\!443!www.bdo.ph.com" -Force
 iis reset
 
 
+### CHECK CERTIFICATES
+win + r -> mmc
+Go to File → Add/Remove Snap-in
+Select Certificates → Computer account then ok
+Navigate to:
+Certificates (Local Computer) → Personal → Certificates
